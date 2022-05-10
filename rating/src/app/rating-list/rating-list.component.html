@@ -1,0 +1,12 @@
+<h1>RatingList:</h1>
+
+<app-average-rating
+ [rating]="averageRating"
+></app-average-rating>
+
+<app-rating
+  *ngFor="let rating of ratings; let i = index"
+  [ratingitem]="rating"
+  [ratingIndex]="i"
+  (changeRatingEmitter)="updateRating($event)"
+></app-rating>

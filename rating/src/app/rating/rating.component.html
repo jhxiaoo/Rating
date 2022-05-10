@@ -1,0 +1,6 @@
+<h1>Rating:</h1>
+<div class="container">
+    <h3>{{ratingitem.name}}</h3>
+    <app-stars [rate]="ratingitem.rate" [clickable]="true" (changeRating)="onChangeReating($event)"></app-stars>
+    <p>{{ratingitem.content}}</p>
+</div>
