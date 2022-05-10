@@ -33,8 +33,8 @@ export class RatingListComponent implements OnInit {
     ));
   }
 
-  updateRating({ index, rate }: { index: number; rate: number }) {
-    this.ratings[index].rate = rate;
+  updateRating({ i, rate }: { i: number; rate: number }) {
+    this.ratings[i].rate = rate;
     this.getAverageRating();
   }
 }

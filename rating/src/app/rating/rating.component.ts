@@ -16,6 +16,6 @@ export class RatingComponent implements OnInit {
   }
 
   onChangeReating(rate: number){
-    this.changeRatingEmitter.emit({index: this.ratingIndex, rate: rate});
+    this.changeRatingEmitter.emit({i: this.ratingIndex, rate: rate});
   }
 }

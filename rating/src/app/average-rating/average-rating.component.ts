@@ -7,13 +7,13 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class AverageRatingComponent implements OnInit {
   @Input() rating: number = 0;
-  
+
   constructor() { 
 
   }
 
   ngOnInit(): void {
-    console.log("average", this.rating);
+    // console.log("average", this.rating);
   }
 
 }
