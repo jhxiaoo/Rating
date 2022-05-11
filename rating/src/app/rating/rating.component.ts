@@ -15,7 +15,7 @@ export class RatingComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onChangeReating(rate: number){
+  onChangeRating(rate: number){
     this.changeRatingEmitter.emit({i: this.ratingIndex, rate: rate});
   }
 }

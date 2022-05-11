@@ -28,7 +28,11 @@ export class StarsComponent implements OnInit {
   }
 
   onClick(i: number) {
-    if (i < 0 || (i === 4 && this.rates[i].chosen) || (i !== 4 && this.rates[i].chosen && !this.rates[i + 1].chosen)) {
+    if (
+      i < 0 ||
+      (i === 4 && this.rates[i].chosen) ||
+      (i !== 4 && this.rates[i].chosen && !this.rates[i + 1].chosen)
+    ) {
       this.rates.forEach((rate) => {
         rate.chosen = false;
       });
@@ -36,7 +40,7 @@ export class StarsComponent implements OnInit {
       for (let j = i + 1; j <= 4; j++) {
         this.rates[j].chosen = false;
       }
-    }  else {
+    } else {
       this.rates.forEach((rate) => {
         rate.chosen = false;
       });

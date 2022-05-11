@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rating-list.component.scss'],
 })
 export class RatingListComponent implements OnInit {
-  updated: boolean = true;
   averageRating: number = 0;
   ratings = [
     {

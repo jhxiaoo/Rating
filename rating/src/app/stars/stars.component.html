@@ -2,7 +2,7 @@
   <span
     *ngFor="let star of rates; let i = index"
     id="star"
-    (click)="clickable? onClick(i):{}"
+    (click)="clickable ? onClick(i) : {}"
     [innerHTML]="star.chosen ? filledStar : emptyStar"
   ></span>
 </div>
